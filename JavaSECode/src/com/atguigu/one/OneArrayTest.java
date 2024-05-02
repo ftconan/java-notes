@@ -13,5 +13,9 @@ public class OneArrayTest {
         }
         String[] foods = new String[]{"a", "b", "c", "d"};
         System.out.println(foods[1]);
+
+        String[] foods2 = new String[4];
+        foods2[0] = "a";
+        System.out.println(foods2[0]);
     }
 }
