@@ -7,18 +7,31 @@ package com.atguigu.oop;
  */
 public class Person {
     String name;
-    int age;
+    //    int age;
+    private int age;
     char gender;
 
     public void study() {
         System.out.println("studying");
     }
 
-    public int showAge() {
-        return age;
+//    public int showAge() {
+//        return age;
+//    }
+
+//    public void addAge(int addAge) {
+//        age += addAge;
+//    }
+
+    public void setAge(int age) {
+        if (age > 0 && age < 200) {
+            this.age = age;
+        } else {
+            System.out.println("年龄不合法");
+        }
     }
 
-    public void addAge(int addAge) {
-        age += addAge;
+    public int getAge() {
+        return age;
     }
 }
