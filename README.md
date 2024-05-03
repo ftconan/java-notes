@@ -8,3 +8,4 @@ java study notes
 * 1.3 Java代码助手
 * 1.4 使用IDE
 * 1.5 使用IDE练习插件
+## 尚硅谷康师傅Java零基础视频
