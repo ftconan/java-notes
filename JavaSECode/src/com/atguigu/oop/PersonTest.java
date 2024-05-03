@@ -21,5 +21,10 @@ public class PersonTest {
 
 //        int age = p1.showAge();
 //        System.out.println("age = " + age);
+
+        Student s = new Student();
+        s.name = "Tom";
+        s.study();
+        s.sleep();
     }
 }
