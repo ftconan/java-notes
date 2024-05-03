@@ -8,6 +8,11 @@ package com.atguigu.oop;
 public class Student extends Person {
     private String school;
 
+    @Override
+    public void eat() {
+        System.out.println("学生应该多吃饭");
+    }
+
     public void setSchool(String school) {
         this.school = school;
     }

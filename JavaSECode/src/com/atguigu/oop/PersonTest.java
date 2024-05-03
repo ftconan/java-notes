@@ -15,7 +15,7 @@ public class PersonTest {
         System.out.println("p1.name = " + p1.name);
         System.out.println("p1.age = " + p1.getAge());
 
-        p1.study();
+        p1.eat();
 //        p1.addAge(2);
 //        p1.showAge();
 
@@ -24,6 +24,7 @@ public class PersonTest {
 
         Student s = new Student();
         s.name = "Tom";
+        s.eat();
         s.study();
         s.sleep();
     }
