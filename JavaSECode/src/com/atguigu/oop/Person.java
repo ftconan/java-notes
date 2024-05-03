@@ -11,6 +11,10 @@ public class Person {
     private int age;
     char gender;
 
+    public Person() {
+        System.out.println("Person()");
+    }
+
     public void study() {
         System.out.println("studying");
     }

@@ -8,6 +8,11 @@ package com.atguigu.oop;
 public class Student extends Person {
     private String school;
 
+    public Student() {
+        super();
+        System.out.println("我是学生");
+    }
+
     @Override
     public void eat() {
         System.out.println("学生应该多吃饭");
@@ -19,5 +24,9 @@ public class Student extends Person {
 
     public String getSchool() {
         return school;
+    }
+
+    public void show() {
+        super.eat();
     }
 }

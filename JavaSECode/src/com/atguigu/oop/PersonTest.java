@@ -27,5 +27,6 @@ public class PersonTest {
         s.eat();
         s.study();
         s.sleep();
+        s.show();
     }
 }
