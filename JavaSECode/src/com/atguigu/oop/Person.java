@@ -1,5 +1,7 @@
 package com.atguigu.oop;
 
+import java.util.Objects;
+
 /**
  * @Author magician
  * @Date 2024/5/2
@@ -7,12 +9,18 @@ package com.atguigu.oop;
  */
 public class Person {
     String name;
-    //    int age;
-    private int age;
+    int age;
+//    private int age;
     char gender;
 
     public Person() {
         System.out.println("Person()");
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("Person(String name, int age)");
     }
 
     public void study() {
@@ -45,5 +53,17 @@ public class Person {
 
     public void sleep() {
         System.out.println("睡觉");
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof Person) {
+            Person p = (Person) obj;
+            return this.name.equals(p.name) && this.age == p.age;
+        }
+        return false;
     }
 }

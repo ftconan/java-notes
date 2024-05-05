@@ -28,5 +28,14 @@ public class PersonTest {
         s.study();
         s.sleep();
         s.show();
+
+        // 多态
+        Person p2 = new Student();
+        p2.eat();
+
+        // equals
+        Person p3 = new Person("Tom", 18);
+        Person p4 = new Person("Tom", 18);
+        System.out.println(p3.equals(p4));
     }
 }
