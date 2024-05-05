@@ -17,10 +17,11 @@ public class Person {
         System.out.println("Person()");
     }
 
-    public Person(String name, int age) {
+    public Person(String name, int age, char gender) {
         this.name = name;
         this.age = age;
-        System.out.println("Person(String name, int age)");
+        this.gender = gender;
+        System.out.println("Person(String name, int age, char gender)");
     }
 
     public void study() {
@@ -65,5 +66,15 @@ public class Person {
             return this.name.equals(p.name) && this.age == p.age;
         }
         return false;
+    }
+
+    // 重写toString方法
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
     }
 }

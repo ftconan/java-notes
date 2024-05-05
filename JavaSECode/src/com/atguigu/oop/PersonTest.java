@@ -34,8 +34,9 @@ public class PersonTest {
         p2.eat();
 
         // equals
-        Person p3 = new Person("Tom", 18);
-        Person p4 = new Person("Tom", 18);
+        Person p3 = new Person("Tom", 18, '男');
+        Person p4 = new Person("Tom", 18, '男');
         System.out.println(p3.equals(p4));
+        System.out.println(p3.toString());
     }
 }
