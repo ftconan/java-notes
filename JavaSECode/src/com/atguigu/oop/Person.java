@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Person {
     String name;
     int age;
-//    private int age;
+    //    private int age;
     char gender;
 
     public Person() {
@@ -76,5 +76,15 @@ public class Person {
                 ", age=" + age +
                 ", gender=" + gender +
                 '}';
+    }
+
+    // 非静态代码块
+    {
+        System.out.println("Person类被实例化");
+    }
+
+    // 静态代码块
+    static {
+        System.out.println("Person类被加载了");
     }
 }
